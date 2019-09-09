@@ -1,0 +1,92 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+  }
+
+  body {
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      background: #f7f5f0;
+      color: #222;
+  }
+
+.main-nav {
+    width: 100%;
+    position: fixed;
+    background: black;
+    text-align: center;
+    padding: 30px;
+    margin-top: 0%;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;    
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+
+.nav li{
+    padding: 5px 10px 10px 10px;
+}
+
+.nav a {
+    transition: all .5s;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+main div {
+    padding-top: 10%;
+}
+
+
+
+footer {
+    width: 100%;
+    min-height: 30px;
+    padding: 20px 0 40px 20px;
+    display: inline-block;
+    font-family: 'Lustria', serif;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+a.social {
+    display: inline-block;
+    /* text-indent: -1px; */
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: .4;
+    transition: all .5s;
+  }
+
+a.twitter {
+    background-image: url(images/twitter.svg);
+}
+
+
+a.social:hover {
+    opacity: 1;
+  }
