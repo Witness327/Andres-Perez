@@ -36,7 +36,7 @@
 }
 
 .nav li {
-    padding: 5px 50px 10px 10px;
+    padding: 5px 35px 10px 10px;
 }
 
 .nav a {
@@ -102,12 +102,10 @@ a:active {
     color: silver;
 }
 
-
-
 .card {
+    justify-content:space-evenly;
     margin: 30px;
-    padding: 20px 40px 40px;
-    max-width: 500px;
+    padding: 20px 40px 40px;    
     text-align: left;
     background: #fff;
     border-bottom: 4px solid #ccc;
@@ -123,7 +121,6 @@ a:active {
 .clearfix {
     clear: both;
 }
-
 
 
 ul.skills {
@@ -221,14 +218,35 @@ footer .copyright {
       font-size: .75em;
   }
 
+  @media (min-width: 768px) {
 
-  @media screen and (min-width: 720px) {
+    .flex {
+        display: flex;
+        max-width: 1200px;
+        justify-content:space-evenly;
+        margin: 0 auto;
+    }
+
+    .card {
+        max-width: 500px;
+    }
+
+
+  }
+
+
+
+  /* @media screen and (min-width: 720px)*/ @media (min-width: 1024px)  {
 
     .flex {
         display: flex;
         max-width: 1200px;
         justify-content: space-around;
         margin: 0 auto;
+    }
+
+    .card {
+        max-width: 500px;
     }
 
     header {
